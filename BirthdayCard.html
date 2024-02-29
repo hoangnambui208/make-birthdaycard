@@ -8,6 +8,7 @@
 <audio controls autoplay loop>
     <source src="sound/nhac.mp3" type="audio/mpeg">
 </audio>
+
 <style>
     body {
         margin: 0;
@@ -48,7 +49,7 @@
         position: absolute;
         bottom: -40%;
         left: 0;
-        width: 100%;
+        width: 90%;
         background-color: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
         transition: bottom 0.5s ease;
@@ -70,28 +71,54 @@
         margin: 0;
         color: #666;
     }
-</style>
+     body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Đảm bảo trang hiển thị đầy đủ trên mọi thiết bị */
+        background: #f0f0f0 url('images/background.jpg') no-repeat center center/cover;
+    }
+    /* Các quy tắc CSS khác */
+
+    /* CSS cho phần âm thanh */
+    audio {
+        position: fixed;
+        bottom: 0;
+        width: 50%;
+        background-color: #333; /* Màu nền cho phần âm thanh */
+        color: #fff; /* Màu chữ cho phần âm thanh */
+    }
+    @media only screen and (max-width: 600px) {
+        /* CSS chỉ dành cho thiết bị có độ rộng màn hình tối đa là 600px */
+        .card {
+            width: 100%; /* Thiết lập các phần tử .card để chiếm toàn bộ chiều rộng của màn hình */
+            max-width: none; /* Xóa giới hạn chiều rộng tối đa */
+        }
+    }
+    </style>
 </head>
 <body>
 <div class="card-container">
     <div class="card">
         <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/284542496_994158751159119_6229309749553684621_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=fvfy0FJ0AqMAX_o-PpL&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfBl18P8Fh6Fr2zMGEXIFW8U1JN5nrb0W2IZA3tdcngDCg&oe=65E4926C" class="card-image" alt="Model 1">
         <div class="card-info">
-            <h3 class="card-title">Vincente Vũ Đức Phương<br>16/03/2004</h3>
+            <h3 class="card-title">Vincente Vũ Đức Phương<br>  16/03/2004</h3>
             <p class="card-description">🎉Chúc trưởng có một ngày tràn đầy niềm vui và những kỷ niệm đẹp đẽ.</p>
         </div>
     </div>
     <div class="card">
         <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/426490571_1610158373090717_2982744191830661402_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=dKwFlZCNveoAX_6cXpt&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfCbOxiA9lXqdq_jzobjV3B_cRgnaOpeDW-OcrOK-Lvwpg&oe=65E588C6" class="card-image" alt="Model 2">
         <div class="card-info">
-            <h3 class="card-title">Teresa Nguyễn Lê Quỳnh Thảo Ái<br>09/03/2005</h3>
+            <h3 class="card-title">Teresa Nguyễn Lê Quỳnh Thảo Ái<br>  09/03/2005</h3>
             <p class="card-description">🍀Sinh nhật vui vẻ nhé! Hy vọng trưởng sẽ có một tuổi mới thú vị và đầy hứng khởi.</p>
         </div>
     </div>
     <div class="card">
         <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-6/428693073_1596667191100680_2136104067885328802_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=kJizrEkCWWoAX8FKVpi&_nc_ht=scontent.fsgn5-13.fna&oh=00_AfCHIE2ek6ADFdKDQthAlY6Sj9OP97AvuRx_bEFpU_9stw&oe=65E61213" class="card-image" alt="Model 3">
         <div class="card-info">
-            <h3 class="card-title">Teresa Nguyễn Lê Quỳnh Ngọc Ái<br>09/03/2005</h3>
+            <h3 class="card-title">Teresa Nguyễn Lê Quỳnh Ngọc Ái<br>  09/03/2005</h3>
             <p class="card-description">🍀Hy vọng ngày hôm nay sẽ đem lại cho trưởng nhiều niềm vui và nụ cười.</p>
         </div>
     </div>
@@ -99,21 +126,21 @@
         <div class="card">
             <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/411954852_3258880797589210_797177358143811077_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=XGMSFnaSEkcAX8qyz0P&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfD0EfMgPVRu5jIKGvWa2_4SjxjUz7KXlWcQGRahJoLrVw&oe=65E684D7" class="card-image" alt="Model 1" >
             <div class="card-info">
-                <h3 class="card-title">Teresa Nguyễn Trần Kim Ngân<br>03/03/1999</h3>
+                <h3 class="card-title">Teresa Nguyễn Trần Kim Ngân<br>  03/03/1999</h3>
                 <p class="card-description">💐Hy vọng trưởng NNN sẽ được bao quanh bởi tình yêu và niềm vui trong ngày đặc biệt này."Fandom này lạ lắm" mãi bên trưởng.</p>
             </div>
         </div>
         <div class="card">
             <img src="images/Lành.jpg" class="card-image" alt="Model 2">
             <div class="card-info">
-                <h3 class="card-title">Cecilia Vũ Nguyễn An Lành<br>29/03/2002</h3>
+                <h3 class="card-title">Cecilia Vũ Nguyễn An Lành<br>  29/03/2002</h3>
                 <p class="card-description">🥳Hy vọng trưởng sẽ nhận được nhiều điều tốt lành, yêu thương và bất ngờ thú vị trong ngày sinh nhật và những ngày tiếp theo nhé!</p>
             </div>
         </div>
         <div class="card">
             <img src="images/quyên.jpg" class="card-image" alt="Model 3">
             <div class="card-info">
-                <h3 class="card-title">Maria Lèo Ngô Minh Quyên<br>03/03/2004</h3>
+                <h3 class="card-title">Maria Lèo Ngô Minh Quyên<br>  03/03/2004</h3>
                 <p class="card-description">🎁Chúc mừng sinh nhật trưởng! Hãy nhảy múa, cười nhiều và tận hưởng mỗi khoảnh khắc của ngày này!</p>
             </div>
         </div>
@@ -121,21 +148,21 @@
             <div class="card">
                 <img src="images/linh.jpg" class="card-image" alt="Model 1">
                 <div class="card-info">
-                    <h3 class="card-title">Maria Lê Nguyễn Ngọc Linh<br>15/03/2005</h3>
+                    <h3 class="card-title">Maria Lê Nguyễn Ngọc Linh<br>  15/03/2005</h3>
                     <p class="card-description">🎂Sinh nhật vui vẻ! Hãy làm những điều trưởng thích và đừng quên tận hưởng ngày đặc biệt này nhé!</p>
                 </div>
             </div>
             <div class="card">
                 <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/391554914_1058872798452261_167812547973223261_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=JcqZgH5iohsAX8nU40z&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfBpHkGfN0zKFLb3tAFg515Ib4fTphADYiE5QWi6lcXLGQ&oe=65E4D211" class="card-image" alt="Model 2">
                 <div class="card-info">
-                    <h3 class="card-title">Giuse Đỗ Phú Đạt<br>21/03/2000</h3>
+                    <h3 class="card-title">Giuse Đỗ Phú Đạt<br>  21/03/2000</h3>
                     <p class="card-description">🎊Mong rằng ngày sinh nhật sẽ mang lại cho trưởng một bữa tiệc vui vẻ và những kỷ niệm đáng nhớ cùng bạn bè.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="images/nghi.jpg" class="card-image" alt="Model 3">
                 <div class="card-info">
-                    <h3 class="card-title">Maria Lâm Vĩnh Bảo Nghi<br>14/03/1993</h3>
+                    <h3 class="card-title">Maria Lâm Vĩnh Bảo Nghi<br>  14/03/1993</h3>
                     <p class="card-description">🎉Happy birthday! Hãy để tình bạn và niềm vui của bạn bè làm cho ngày sinh nhật của trưởng trở nên đặc biệt hơn bao giờ hết.</p>
                 </div>
             </div>
